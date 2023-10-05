@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+html {
+	--theme-border: 0.1rem dashed rgb(233 240 255);
+    --radius: 0.5rem;
+    --text-shadow: 0 1px 5px rgba(0,0,0,.25);
+    --title-shadow: 1px 1px 8px var(--background);
+    --box-shadow: 0px 7px 15px 0px #a48fff30;
+    --margin: 0.9rem;
+    --color-red: #ff5f5f;
+    --color-grey: #ededed;
+    --color-white: #fff;
+    --main: rgb(52 73 94);
+    --colorG: rgb(52 73 94 / 80%);
+    --colorF: rgb(52 73 94 / 70%);
+    --colorE: rgb(52 73 94 / 60%);
+    --colorD: rgb(52 73 94 / 50%);
+    --colorC: rgb(52 73 94 / 35%);
+    --colorB: rgb(52 73 94 / 20%);
+    --colorA: rgb(52 73 94 / 10%);
+    --under-background: linear-gradient(117deg,#f3efff,#e7f1ff);
+    --background-color: #fff;
+    --background: #f6f7ffcc;
+    --border: unset;
+    --theme: #ff6a6a;
+    --theme-10: #ff6a6a1a;
+    --theme-30: #ff6a6a4a;
+    --theme-60: #ff6a6a99;
+    --theme-80: #ff6a6acc;
+}
+li {
+    list-style: none;
+}
+.col-mb-12.col-tb-8.col-tb-offset-2 {
+    margin-left: 0;
+    width: 100%;
+}
+.typecho-option {
+    padding: var(--margin)!important;
+    background: var(--background);
+    border-radius: var(--radius);
+    list-style: none;
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+.typecho-option span {
+    margin-right:0;
+}
+
+
+#custom-field {
+    display: none;
+}
+
+
+
+.cat_block {
+    padding: var(--margin);
+    color: var(--main);
+    box-shadow: var(--box-shadow);
+    background: var(--background);
+    border-radius: var(--radius);
+    border: unset;
+}
+.cat_option_menu{
+    position: sticky;
+    top: var(--margin);
+    z-index: 9;
+}
+@media (max-width:750px) {
+    .cat_option_menu{
+        position: relative;
+        padding-bottom: var(--margin)!important;
+    }
+}
+/* 菜单的文章名 */
+.cat_mainmenu .show_title {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-between;
+}
+.cat_mainmenu .cat_block{
+    cursor: pointer;
+}
+/* 顶部菜单 */
+.cat_mainmenu_nav {
+    display: flex;
+    gap: var(--margin);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.cat_mainmenu_nav .item{
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    min-width: 5rem;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.cat_mainmenu_nav .item .logo{
+    width: 2rem;
+}
+.cat_mainmenu_nav .item .logo i {
+    line-height: 2rem;
+}
+.cat_mainmenu_nav .item .word{
+    display: block;
+    max-width: 5rem;
+    font-size: 0.9rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.cat_mainmenu_nav .item .arrow{
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    color: var(--colorD);
+    font-size: 0.5rem;
+}
+.cat_mainmenu_nav div .mainmenu_nav_child {
+    position: absolute;
+    display: flex;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: var(--background);
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+    padding: 0.5rem 0;
+}
+.cat_mainmenu_nav div:hover .mainmenu_nav_child {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.cat_mainmenu_nav div .mainmenu_nav_child a {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cat_menu{
+    position: sticky;
+    top: var(--margin);
+    z-index: 9;
+}
+.cat_categorymenu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--margin);
+    justify-content: center;
+}
+.cat_categorymenu li{
+    height: auto;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.cat_mainmenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat_categorymenu li .category_nav_child {
+    position: absolute;
+    display: flex;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+    top: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: var(--background);
+    width: 100%;
+    min-width: 6rem;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+    padding: 0.2rem 0;
+}
+.cat_categorymenu li .category_nav_child a {
+    padding: 0.5rem;
+    text-align: center;
+}
+.cat_categorymenu li:hover .category_nav_child {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+
+
+
+
+
+
+
+
+.typecho-option .backup_botton_green {
+    color: white;
+    background: green;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.typecho-option .backup_botton_red {
+    color: white;
+    background: red;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+input[type=text],input[type=number],ul.token-input-list,.category-option ul,.upload-area, textarea, select, #custom-field , #custom-field input:not(#token-input-tags), .w-50 a, .btn {
+    list-style: none;
+    cursor: pointer;
+    border-radius: var(--radius)!important;
+    border: var(--theme-border);
+    height: auto;
+    background: #fff;
+    color: #444;
+}
+input[type=text], input[type=password], input[type=email], textarea {
+    width:100%;
+}
+textarea {
+    min-height: 100px;
+}
+input#slug {
+    cursor: auto;
+    border: none!important;
+}
+.btn{
+    padding: 7px;
+}
+
+#wmd-button-row {
+    height: auto;
+}
+
+label.typecho-label:not(#custom-field-expand):before {
+    content: "🌻 ";
+    z-index: 1;
+}
+.wmd-button,
+.origin_btn {
+    margin: 0.2rem;
+    padding: 0.5rem!important;
+    border-radius: var(--radius)!important;
+}
+.wmd-button svg,
+.origin_btn svg {
+    vertical-align: middle;
+}
+
+.wmd-edittab {
+    display: none;
+}
+.wmd-edittab a{
+    border: 1px dashed #adadad;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20%;
+}
+#wmd-editarea{
+    word-break: break-all;
+}
+
+/* 隐藏默认按钮 */
+#wmd-image-button,#wmd-link-button,#wmd-code-button,#wmd-spacer1,#btn-preview {
+    display: none;
+}
+
+.wmd-prompt-dialog {
+    border-radius: var(--radius);
+    border: var(--theme-border);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    max-width: calc(90vw - 20px);
+    background: linear-gradient(117deg,#f3efff,#e7f1ff);
+}
+body {
+    background: linear-gradient(117deg,#f3efff,#e7f1ff);
+}
+select{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    height: auto!important;
+}
+.characterblock span{
+    margin: 0.25rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    display: inline-block;
+    padding: 0 0.25rem;
+    cursor: pointer;
+    border-radius: 20%!important;
+}
+.option_gonggao .button{
+    cursor: pointer;
+}
+.option_gonggao .text div{
+    border-bottom: 1px dashed #ff7d7d61;
+}
+.editor_emoji{
+    cursor: pointer;
+    margin: 0.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.cat_basic_welcome .commentinfos{
+    font-size: 0.75rem;
+}
+.cat_basic_welcome .diary_lovers_avatar {
+    display: none;
+}
+
+.cat_key {
+    display: block;
+}
+#jihuo {
+    color: #fff;
+    background: green;
+    width: 5rem;
+    text-align: center;
+    font-size: 17px;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+}
+.theme_title {
+    font-size: 4rem;
+    text-align: center;
+    padding:1rem;
+}
