@@ -19,5 +19,5 @@ Sunny主题在2023年9月15日正式发布，此版本为发布之后的第一版。后因大量内容更新，因
 9. 自定义字体、自定义主题色、自定义favicon等多种自定义功能。
 10. 数十项编辑器功能，支持网易云音乐，bilibili视频插入。
 
-![白天]()
-![黑夜]()
+![白天](https://raw.githubusercontent.com/ScarletDor/typecho_theme_sunny/master/bai.webp)
+![黑夜](https://raw.githubusercontent.com/ScarletDor/typecho_theme_sunny/master/hei.webp)
