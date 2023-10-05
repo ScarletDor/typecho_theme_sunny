@@ -21,4 +21,4 @@ Sunny主题在2023年9月15日正式发布，此版本为发布之后的第一版。后因大量内容更新，因
 
 本主题有清晰合理的主题结构，比如去掉侧栏、为所有卡片添加边框阴影、均可一步实现，且无任何冲突。
 
-![](https://raw.githubusercontent.com/ScarletDor/typecho_theme_sunny/master/screenshot.webp)
+![](https://raw.githubusercontent.com/ScarletDor/typecho_theme_sunny/master/screenshot.png)
