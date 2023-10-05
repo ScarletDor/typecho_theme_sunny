@@ -6,6 +6,10 @@
 
 Sunny主题在2023年9月15日正式发布，此版本为发布之后的第一版。后因大量内容更新，因此后推出了更多功能的正式版。因此版本功能完整，灵活性高，因此在github放出开源版本，供各位小伙伴下载使用。
 
+
+![](https://raw.githubusercontent.com/ScarletDor/typecho_theme_sunny/master/screenshot.png)
+
+
 此主题的优势：
 
 1. 不夸样式了，演示站有目共睹，双栏、简洁、美观。
@@ -20,5 +24,3 @@ Sunny主题在2023年9月15日正式发布，此版本为发布之后的第一版。后因大量内容更新，因
 10. 数十项编辑器功能，支持网易云音乐，bilibili视频插入。
 
 本主题有清晰合理的主题结构，比如去掉侧栏、为所有卡片添加边框阴影、均可一步实现，且无任何冲突。
-
-![](https://raw.githubusercontent.com/ScarletDor/typecho_theme_sunny/master/screenshot.png)
