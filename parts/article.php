@@ -11,8 +11,10 @@
             <?php cat_article_changetext($this, $this->user->hasLogin()) ?>
         </div>
         <!-- 文章页底 -->
-        <div class="article_tags">#<?php $this->tags('　#', true, '暂无标签'); ?></div>
-        <div class="article_tags"><time datetime="<?php $this->date('Y年n月j日'); ?>" itemprop="datePublished"> Created in <?php $this->date('jS F Y'); ?></time></div>
+        <div class="article_end">
+            <span>By <?php $this->author(); ?></span>
+            <span>On <time datetime="<?php $this->date('Y年n月j日'); ?>" itemprop="datePublished"><?php $this->date('Y年n月j日'); ?></time></span>
+        </div>
     </article>
     
     

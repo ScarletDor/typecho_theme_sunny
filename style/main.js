@@ -134,7 +134,7 @@ $('.main').on('click', '.cat_cancel_comment_reply', function () {
     return TypechoComment.cancelReply();
 });
 
-console.log("%c🌻 程序：Typecho | 主题：Sunny开源版 | 作者：火喵酱 | 官网：https://www.mmbkz.cn 🌻", "color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
+console.log("%c🌻 程序：Typecho | 主题：Sunny 1.0 | 作者：火喵酱 | 官网：https://www.mmbkz.cn 🌻", "color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
 
 
 

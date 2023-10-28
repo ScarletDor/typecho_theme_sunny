@@ -367,7 +367,7 @@ if(isset($_POST['type'])) {
         <li><h3>您使用的是Sunny开源版，可任意修改本主题，但请勿去除本模块、以及控制台中的版权信息。</h3></li>
         <li>本主题支持<u>Hanny的Links插件</u>，开启自动生成友链页面，<a href="//www.imhan.com/archives/typecho-links/" target="_blank">点此去官网</a>下载插件。也可在喵喵聊天群内群文件下载。</li>
         <li>作者：<a href="https://www.mmbkz.cn/" target="_blank">火喵酱</a></li>
-        <li>官网：<a href="https://www.mmbkz.cn/sunny.html" target="_blank">https://www.mmbkz.cn/sunny.html</a></li>
+        <li>官网：<a href="https://store.mmbkz.cn" target="_blank">https://store.mmbkz.cn</a></li>
         <li>Github仓库：<a href="https://github.com/ScarletDor/typecho_theme_sunny" target="_blank">https://github.com/ScarletDor/typecho_theme_sunny</a></li>
         <li>官群：103659317</li>
         <li>　</li>

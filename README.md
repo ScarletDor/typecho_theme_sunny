@@ -1,5 +1,7 @@
 ## Typecho主题Sunny的开源版本
 
+Releases可能不及时，可直接打包下载。
+
 ### 仓库地址
 
 https://github.com/ScarletDor/typecho_theme_sunny

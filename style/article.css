@@ -16,11 +16,17 @@ article {
     padding: 0.5rem 1rem;
     border-radius: var(--radius);
 }
+.article_end {
+    font-size: small;
+    color: var(--A);
+    line-height: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+}
 .article_tags {
     font-size: 0.9rem;
     color: var(--A);
     line-height: 1.75rem;
-    padding: 0.5rem 0;
 }
 .article_tags a{
     color: var(--B);

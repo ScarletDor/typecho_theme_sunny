@@ -17,7 +17,7 @@
     define("XNAME", ($this->user->hasLogin() ? $this->user->screenName : $this->remember('author', true)));
     define("XMAIL", $this->user->hasLogin() ? $this->user->mail : $this->remember('mail', true));
     define("XSITE", $this->user->hasLogin() ? $this->user->url : $this->remember('url', true));
-    define("MMBKZ", 'Powered by<a href="https://typecho.org/" target="_blank" cat_title="使用Typecho建站"> Typecho </a> & <a href="https://www.mmbkz.cn/sunny.html" target="_blank" cat_title="基于🌻Sunny主题开源版"> Sunny </a>');
+    define("MMBKZ", 'Powered by<a href="https://typecho.org/" target="_blank" cat_title="使用Typecho建站"> Typecho </a> & <a href="https://store.mmbkz.cn" target="_blank" cat_title="基于🌻Sunny1.0主题"> Sunny </a>');
 ?>
 <html lang="zh-CN" class="<?php echo darkmode()?'darkmode':'';?>">
     <head>

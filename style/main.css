@@ -149,9 +149,10 @@ img.lazyloaded {
     width: 3.25rem;
     height: 3.25rem;
     vertical-align: middle;
-    border-radius: var(--radius);
+    border-radius: 50%;
+    padding: 0.2rem;
     box-shadow: var(--box-shadow);
-    /*background: var(--background);*/
+    background: var(--background);
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -201,6 +202,7 @@ img.lazyloaded {
     gap: 0.5rem;
     display: flex;
     align-items: baseline;
+    flex-direction: column;
 }
 .title_block_title h1{
     font-size: 1.25rem;
@@ -813,6 +815,10 @@ aside .recent_comments {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.cat_recentcomment_list .right .user time{
+    color: var(--B);
+    font-size: smaller;
 }
 .cat_recentcomment_list .right .user .name{
     font-weight: bold;

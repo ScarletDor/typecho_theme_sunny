@@ -5,6 +5,7 @@
         <?php if($this->is('post')): ?>
             <div class="title_block_title">
                 <h1><?php echo $this->title ?></h1>
+                <div class="article_tags">#<?php $this->tags('　#', true, '暂无标签'); ?></div>
             </div>
         <!-- 页面（页面标题） -->
         <?php elseif($this->is('page')): ?>
