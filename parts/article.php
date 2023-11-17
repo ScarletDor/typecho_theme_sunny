@@ -30,12 +30,9 @@
                 <p class="links_description">{title}</p>
             </a>');
         ?>
-    
         </div>
     <?php elseif ($this->request->getPathInfo() == '/archives') :?>
         <div class="cat_guidang">
-            
-                        
             <?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=10000')->to($cat_post);
                 $year=0; $mon=0; $i=0; $j=0;
                 $output = '<div class="cat_block">';
@@ -58,13 +55,7 @@
                 endwhile;
                 $output .= '</ul></li></ul></div>';
                 echo $output;
-            ?>          
-
- 
- 
- 
- 
-            
+            ?>
         </div>
     <?php else :?>
         <!-- 正文 -->

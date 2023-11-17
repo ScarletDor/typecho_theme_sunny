@@ -71,13 +71,15 @@
         <?php echo $this->options->cat_user_header ? $this->options->cat_user_header : '' ?>
         <?php echo $this->options->cat_user_css ? '<style>' . $this->options->cat_user_css . '</style>' : '' ?>
         <style>
-            @font-face {
-                font-family: 'user';
-                font-weight: normal;
-                font-style: normal;
-                font-display: swap;
-                src: url('<?php echo $this->options->cat_user_font?$this->options->cat_user_font:''; ?>');
-            }
+            <?php if($this->options->cat_user_font): ?>
+                @font-face {
+                    font-family: 'user';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-display: swap;
+                    src: url('<?php echo $this->options->cat_user_font; ?>');
+                }
+            <?php endif; ?>
             html {
             	--theme: <?php echo ($this->options->user_themecolor ? $this->options->user_themecolor : '#ff6a6a') ?>;
             	--theme-10: <?php echo ($this->options->user_themecolor ? $this->options->user_themecolor . '1a' : '#ff6a6a1a') ?>;
