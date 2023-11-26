@@ -94,7 +94,11 @@ if ($comments->levels > 0) {
                 <div class="user"<?php if ($comments->authorId && $comments->authorId == $comments->ownerId) echo 'align="right"'; ?>>
             		<!-- 标签上姓名 -->
             		<span class="comment_user_name">
-                        <?php echo $comments->author ?>
+                        <?php if ($comments->url): ?>
+                            <a href="<?php echo $comments->url ?>" target="_blank" rel="external nofollow"><?php echo $comments->author ?></a>
+                        <?php else: ?>
+                            <?php $comments->author(); ?>
+                        <?php endif; ?>
                     </span>
                     <!-- @父级用户名 -->
                     <?php get_comment_at($comments->coid) ?>
